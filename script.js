@@ -15,7 +15,7 @@ if (age) {
     if (time !== null && time !== "") {
         time = Number(time);
         if (!isNaN(time)) {
-            if (time < 0 || time > 24) {
+            if (time <= 0 || time > 24) {
                 alert (error);
             } else if (time !== 0 && time <= 5) {
                 alert (veryEarly);
